@@ -29,7 +29,7 @@ I'm an enthusiastic and dedicated Software Engineering student specializing in S
 ## 📫 How to Reach Me
 - **LinkedIn:** https://www.linkedin.com/in/aj-naflan(#)
 - **Email:** naflan265@gmail.com(#)
-- **GitHub:** github.com/nafly-090/(#)
+- **GitHub:** https://github.com/Nafly-090/(#)
 
 ## ⚡ Fun Fact
 I'm constantly learning and building new projects! 🚀
