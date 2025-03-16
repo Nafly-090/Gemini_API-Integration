@@ -27,9 +27,9 @@ I'm an enthusiastic and dedicated Software Engineering student specializing in S
 - Design Tools: Figma, Adobe Photoshop, Adobe Illustrator, Adobe XD
 
 ## 📫 How to Reach Me
-- **LinkedIn:** https://www.linkedin.com/in/aj-naflan(#)
-- **Email:** naflan265@gmail.com(#)
-- **GitHub:** https://github.com/Nafly-090/(#)
+- **LinkedIn:** https://www.linkedin.com/in/aj-naflan
+- **Email:** naflan265@gmail.com
+- **GitHub:** https://github.com/Nafly-090/
 
 ## ⚡ Fun Fact
 I'm constantly learning and building new projects! 🚀
