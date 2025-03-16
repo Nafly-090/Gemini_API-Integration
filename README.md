@@ -1,4 +1,4 @@
-# Hi there, I'm Nafly! 👋
+# Hi there, I'm Naflan! 👋
 
 I'm an enthusiastic and dedicated Software Engineering student specializing in Software Technologies. I'm passionate about building innovative and efficient web and mobile applications. Here's a bit about me:
 
