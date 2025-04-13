@@ -1,38 +1,12 @@
-# Hi there, I'm Naflan! 👋
+# React + Vite
 
-I'm an enthusiastic and dedicated Software Engineering student specializing in Software Technologies. I'm passionate about building innovative and efficient web and mobile applications. Here's a bit about me:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🔭 Current Projects
-- **Meal Mate** - A food ordering app (Full Backend Development).
-- **BusPass** - A bus booking app with database handling.
-- **Smart Plan Care System** - Automating plant positioning using a stepper motor.
-- **Reminder App** - A task reminder app with Firebase integration.
-- **ShopRent** - A platform for home and shop rentals.
-- **SmartFamer** - Providing support for paddy farmers.
-- **Rock Paper Scissors Game** - Fun game built using JS, HTML, CSS.
+Currently, two official plugins are available:
 
-## 🌱 Currently Learning
-- Flutter (Building various apps including a Clock App and the Reminder App).
-- React & Next.js (Exploring full-stack solutions).
-- Game Development (Creating interactive games with animations).
-- AWS (Certified in AWS Academy Cloud Foundations).
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 💡 Skills
-- Languages: Java, SQL, JavaScript, C, PHP
-- Frameworks & Libraries: React, Next.js, Laravel, TailwindCSS, Bootstrap
-- Mobile Development: Flutter, Android Studio
-- Backend: Node.js, Firebase, SQLite
-- Web Design: HTML, CSS, JSON, XML
-- IoT & Hardware: Arduino IDE, IoT Development
-- Design Tools: Figma, Adobe Photoshop, Adobe Illustrator, Adobe XD
+## Expanding the ESLint configuration
 
-## 📫 How to Reach Me
-- **LinkedIn:** https://www.linkedin.com/in/aj-naflan
-- **Email:** naflan265@gmail.com
-- **GitHub:** https://github.com/Nafly-090/
-
-## ⚡ Fun Fact
-I'm constantly learning and building new projects! 🚀
-
-Feel free to explore my repositories and connect with me. Let's build something amazing together! 😊
-
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
