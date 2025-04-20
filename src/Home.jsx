@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { Context } from './context/context';
 
 const Home = () => {
-    const { onSent, resentpromt, showResult, loading, resultdata, setInput, input } = useContext(Context);
+    const { onSent, recentpromt, showResult, loading, resultdata, setInput, input } = useContext(Context);
     return (
         <div className="min-h-screen bg-gray-100 text-black flex-1 flex-col ">
 
@@ -26,9 +26,29 @@ const Home = () => {
                     <div className=" mx-50 mt-5  text-4xl font-bold text-gray-400 ">
                         How Can I Help you today?
                     </div>
-                </> 
-                : <div className='result'>
-                    <img src='{ass}' alt='' />
+                </>
+                : <div className='px-50 max-h-[70vh] overflow-y-auto scrollbar-hide '>
+                    <div className="mx-auto flex items-center gap-5">
+                        <img src={assets.user_icon} className='w-10 rounded-full' alt="" />
+                        <p>{recentpromt}</p>
+                    </div>
+
+                    <div className="flex px-5 itrms-start gap-5 mt-10">
+                        <img src={assets.gemini_icon} className='w-10 h-10' alt="" />
+                        {loading ? (
+                            <div className='w-full flex flex-col gap-2'>
+                                <hr className='rounded-md border-none bg-[#f6f7f8] bg-gradient-to-r from-[#9ed7ff] via-white to-[#9ed7ff] bg-[800px_50px] h-5 w-2 animate-loader' />
+                                <hr className='rounded-md border-none bg-[#f6f7f8] bg-gradient-to-r from-[#9ed7ff] via-white to-[#9ed7ff] bg-[800px_50px] h-5 animate-loader' />
+                                <hr className='rounded-md border-none bg-[#f6f7f8] bg-gradient-to-r from-[#9ed7ff] via-white to-[#9ed7ff] bg-[800px_50px] h-5 animate-loader' />
+                                <style>
+                                   
+                                </style>
+                            </div>
+                        ) : (
+                            <p dangerouslySetInnerHTML={{ __html: resultdata }} />
+                        )}
+
+                    </div>
                 </div>
 
             }

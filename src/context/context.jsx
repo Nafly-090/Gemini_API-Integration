@@ -5,7 +5,7 @@ export const Context = createContext();
 const ContextProvider = (props) => {
 
     const [input,setInput] = useState("");
-    const [resentpromt,setresentpromt] = useState("");
+    const [recentpromt,setrecentpromt] = useState("");
     const [prevprompt,setprevprompt] = useState([]);
     const [showResult,setshowResult] = useState(false);
     const [loading,setloading] = useState(false);
@@ -16,6 +16,7 @@ const ContextProvider = (props) => {
         setresultdata("");
         setloading(true);
         setshowResult(true);
+        setrecentpromt(input);
         const response = await run(input);
         setresultdata(response);
         setloading(false);
@@ -28,8 +29,8 @@ const ContextProvider = (props) => {
         prevprompt,
         setprevprompt,
         onSent,
-        setresentpromt,
-        resentpromt,
+        setrecentpromt,
+        recentpromt,
         showResult,
         loading,
         resultdata,
