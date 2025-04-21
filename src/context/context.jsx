@@ -11,6 +11,10 @@ const ContextProvider = (props) => {
     const [loading,setloading] = useState(false);
     const [resultdata,setresultdata] =useState("");
 
+    const delayPara =(index) => {
+
+    }
+
 
     const onSent = async (prompt) => {
         setresultdata("");
@@ -18,7 +22,17 @@ const ContextProvider = (props) => {
         setshowResult(true);
         setrecentpromt(input);
         const response = await run(input);
-        setresultdata(response);
+        let responseArry = response.split("**");
+        let newResponse ;
+        for(let i=0; i< responseArry.length;i++){
+            if(i === 0 || i%2  !== 1 ){
+                newResponse += responseArry[i];
+            }else{
+                newResponse +="<b className='font-bold' >"+responseArry[i]+"</b>"
+            }
+        }
+        let newResponse1 = newResponse.split("*").join("<br/>")
+        setresultdata(newResponse1);
         setloading(false);
         setInput("");
     }

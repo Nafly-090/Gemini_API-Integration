@@ -37,15 +37,13 @@ const Home = () => {
                         <img src={assets.gemini_icon} className='w-10 h-10' alt="" />
                         {loading ? (
                             <div className='w-full flex flex-col gap-2'>
-                                <hr className='rounded-md border-none bg-[#f6f7f8] bg-gradient-to-r from-[#9ed7ff] via-white to-[#9ed7ff] bg-[800px_50px] h-5 w-2 animate-loader' />
                                 <hr className='rounded-md border-none bg-[#f6f7f8] bg-gradient-to-r from-[#9ed7ff] via-white to-[#9ed7ff] bg-[800px_50px] h-5 animate-loader' />
                                 <hr className='rounded-md border-none bg-[#f6f7f8] bg-gradient-to-r from-[#9ed7ff] via-white to-[#9ed7ff] bg-[800px_50px] h-5 animate-loader' />
-                                <style>
-                                   
-                                </style>
+                                <hr className='rounded-md border-none bg-[#f6f7f8] bg-gradient-to-r from-[#9ed7ff] via-white to-[#9ed7ff] bg-[800px_50px] h-5 animate-loader' />
+                                
                             </div>
                         ) : (
-                            <p dangerouslySetInnerHTML={{ __html: resultdata }} />
+                            <p className='text-lg/ font-normal ' dangerouslySetInnerHTML={{ __html: resultdata }} />
                         )}
 
                     </div>
